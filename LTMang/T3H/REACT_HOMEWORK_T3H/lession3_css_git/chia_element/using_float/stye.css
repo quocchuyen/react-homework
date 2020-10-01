@@ -1,0 +1,85 @@
+.contaner
+{
+
+}
+.row 
+{
+    float: left;
+    clear: both;
+    height: 50px;
+}
+.row_joint 
+{
+    float: left;
+    justify-content: center;
+    
+}
+
+.col
+{
+    background: #EE5351;
+    width: 100px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    height: 50px;
+}
+
+.row_two_one {
+    width: 202px;
+}
+
+.row_three_one {
+    width: 304px;
+}
+
+.row_four_one {
+    width: 406px;
+}
+
+.row_five_one {
+    width: 610px;
+}
+
+.row_six_one
+{
+    width: 515px;
+}
+.row_six_two
+{
+    width: 705px;
+}
+.row_seven_one
+{
+    width: 413px;
+}
+.row_seven_two
+{
+    width: 807px;
+}
+.row_eight_one
+{
+    width:312px ;
+}
+.row_eight_two
+{
+    width:908px ;
+}
+.row_night_one {
+    width: 212px;
+}
+
+.row_night_two {
+   width: 1008px;
+}
+.row_ten_one {
+   width: 100px;
+}
+
+.row_ten_two {
+  width: 1120px;
+}
+.row_eleven_one
+{
+    width: 1222px;
+}
