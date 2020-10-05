@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: #d8aa96;
+    font-family: sans-serif;
+    align-items: center;
+    margin: 0 120px;
+}
+.container
+{
+    display: flex;
+    margin: 10px auto;
+}
+.left-container {
+    background: #807182;
+    overflow: hidden;
+    padding: 40px 0 0 0;
+    text-align: center;
+    width: 300px;
+}
+.left-container h2 {
+    color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    font-size: 24px;
+    
+}
+.left-container h2 i
+{
+    border-radius: 50%;
+    background: #F7B1AB;
+    padding: 10px;
+    color: #807182;
+}
+.left-container .dog
+{
+   margin-top: 224px;
+    opacity: 0.4;
+}
+.left-container img
+{
+    width: 70%;
+    margin-bottom: -5px;
+    
+}
+
+input[type="radio"]
+{
+    display: none;
+}
+.right-container
+{
+    width: 500px;
+    background: #F9C7C2;
+    padding: 40px;
+}
+.right-container h2
+{
+    font-size: 28;
+    font-weight: 600;
+}
+.right-container .pets-photo button
+{
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.right-container .pets-photo button i
+{
+    font-size: 16px;
+}
+
+input,
+.radio-container
+{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 38px;
+    width: 176px;
+    border-radius: 4px;
+    
+}
+.radio-container
+{
+    background: #fff;
+    display: flex;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+.radio-container [type="radio"]
+{
+    display: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+} 
+.radio-container label
+{
+    width: 80px;
+    border-radius: 2px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.radio-container input[type="radio"]:checked+label
+{
+    background: #f7b1ab;
+}
+
+.pets-name label,
+.pets-breed label,
+.pets-birthday label,
+.pets-gender label,
+.pets-spayed-neutered label
+ {
+    display: block;
+    margin-bottom: 5px;
+}
+.pets-weight label
+{
+    margin-left: 10px;
+}
+
+.pets-name,
+.pets-photo,
+.pets-breed,
+.pets-birthday,
+.pets-gender,
+.pets-spayed-neutered
+{
+    display: inline-block;
+    margin: 12px;
+}
+.pets-weight .radio-container
+{
+    width: 91%;
+    margin: 0 12px;
+}
+
+.set
+{
+    background: #fff;
+    height: 70px;
+    padding: 15px;
+    
+}
+.set button
+{
+    border-radius: 20px;
+    line-height: 38px;
+    height: 38px;
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+#back
+{
+    margin-right: 200px;
+    margin-left: 25px;
+    background: #fff;
+    cursor: pointer;
+}
+#next
+{
+    background: #807182;
+    color: #fff;
+    cursor: pointer;
+}

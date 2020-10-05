@@ -1,0 +1,57 @@
+*
+{
+    box-sizing: border-box;
+    background: #BFBFBF;
+    font-family:sans-serif;
+}
+.header
+{
+    text-align: center;
+}
+p,
+h1
+{
+    color: #fff;
+} 
+h1
+{
+    font-weight: 500;
+}
+p>a
+{
+    font-weight: 700;
+    color: blue;
+} 
+.menu 
+{
+    width: 1000px;
+    height: 50px;
+    background: #FF7F50;
+    padding: 16px;
+    margin: 0 auto;
+    
+}
+.menu a
+{
+    text-decoration: none;
+    color: #fff;
+    background: #FF7F50;
+    margin: 20px;
+}
+.menu a:first-child
+{
+    background: #444444;
+    padding: 16px;
+    margin-left:-16px ;
+}
+.menu a:last-child
+{
+    margin-left: 199px;
+}
+#icon_down
+{
+    background: #FF7F50;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+}
