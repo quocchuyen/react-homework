@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #354245;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 30px auto;
+    width: 500px;
+    height: 520px;
+    background: #EDF7F9;
+    position: relative;
+    padding: 45px;
+}
+
+.content {
+    width: 410px;
+    height: 380px;
+    border-radius: 7%;
+    box-shadow: 0px 5px 5px 2px #A5ADB0;
+}
+
+.content>p {
+    display: block;
+    bottom: 8%;
+    left: 28%;
+    font-size: 38px;
+    font-weight: 100;
+}
+
+.content, 
+.content>p, 
+.content .add p {
+    background: #fff;
+    opacity: 0.9;
+}
+
+.content .add p {
+    left: 12%;
+    bottom: 25%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 6px;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px 2px #A5ADB0;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 7%;
+    width: 410px;
+    height: 350px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 56% 75%, 50% 82%, 44% 75%, 0% 75%);
+}
+
+.card img {
+    width: 32%;
+    top: 10%;
+    left: 34%;
+}
+
+.card, 
+.card img {
+    background: #B1DBE7;
+}
+
+.card .read {
+    border-radius: 7%;
+    display: none;
+    width: 410px;
+    height: 350px;
+    opacity: 0.7;
+    transition: 2s;
+}
+
+.card .read p {
+    color: #fff;
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    top: 30%;
+    left: 34%;
+}
+
+.card:hover .read,
+.card .read p {
+    background: #506367;
+    display: block;
+}
+
+.content, 
+.content>p, 
+.content .add p, 
+.card, 
+.card img, 
+.card .read, 
+.card .read p {
+    position: absolute;
+}
