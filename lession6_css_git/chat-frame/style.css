@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #c9dbe7;
+}
+.container {
+    width: 700px;
+    height: 700px;
+    position: relative;
+    margin: 50px auto;
+}
+.left {
+    width: 258px;
+    position: absolute;
+    left: 2px;
+    padding: 20px;
+    background: #454753;
+    height: 700px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.left .search input {
+    height: 40px;
+    width: 180px;
+    background: #696c73;
+    border-radius: 5px;
+}
+.left .search i
+{
+    position: absolute;
+    color: #fff;
+    top: 34px;
+    right: 60px;
+    cursor: pointer;
+    font-size: 14px;
+} 
+.left .people
+{
+    overflow: scroll;
+    height: 700px;
+}
+.left .people .friend {
+    position: relative;
+    margin: 10px 0;
+}
+.avatar, 
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.avatar img {
+    width: 100%;
+    border: 2px solid #999ca5;
+    cursor: pointer;
+}
+
+.name {
+    position: absolute;
+    top: 6px;
+    left: 60px;
+    color: #fff;
+}
+
+.status
+{
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 33px;
+    left: 60px;
+    border-radius: 50%;
+}
+.online
+{
+    background: #91ba78;
+    content: "online";
+}
+.offline
+{
+    background: #d48c75;
+    
+}
+.left .people .friend .status.online::after
+{
+    content: "online";
+}
+.left .people .friend .status.offline p
+{
+    
+    width: 130px;
+    height: 20px;
+}
+.left .people .friend .status.online::after,
+.left .people .friend .status.offline p,
+.status p
+{
+    position: absolute;
+    top: -6px;
+    left: 15px;
+    color: rgba(190, 187, 187, 0.863);
+    font-size: 14px;
+}
+.right {
+    width: 440px;
+    position: absolute;
+    right: 0;
+    display: block;
+    overflow: hidden;
+    height: 700px;
+    border-radius: 5px;
+}
+.right .info
+{
+    width: 100%;
+    height: 70px;
+    background: #f4f5fa;
+}
+.right .info .avatar
+{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+.right .info .avatar img
+{
+    border: 2px solid #84bd88;
+}
+
+.right .info .name
+{
+    position: absolute;
+    left: 74px;
+    top: 14px;
+    color: #000;
+}
+.right .info .status p
+{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+}
+.right .info .add-list i
+{
+    position: absolute;
+    color: #d8d9de;
+    right: 20px;
+    top: 26px;
+    cursor: pointer;
+}
+
+.right .content
+{
+    width: 100%;
+    height: 480px;
+    top: 70px;
+    overflow: scroll;
+    padding: 20px;
+}
+.right .content .chat-left,
+.chat-right
+{
+    width: 100%;
+}
+.right .content :nth-child(3)
+{
+    position: absolute;
+    top: 273px;
+    left: 0;
+}
+.right .content :nth-child(4)
+{
+    position: absolute;
+    top: 400px;
+    left: 0;
+}
+.right .content .chat-left .status.online
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.right .content .chat-left .status.online p
+{
+    position: absolute;
+    color: #000;
+    left: 12px;
+    top: -4px;
+}
+.right .content .chat-left .time
+{
+    position: absolute;
+    top:15px ;
+    left:86px ;
+    color: #a8a9ae;
+}
+.right .content .chat-left .message,
+.right .content .chat-right .message
+{
+    background: #91ba87;
+    width: 85%;
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.triangle
+{
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #91ba87;
+}
+.right .content .chat-right .status.online
+{
+    position: absolute;
+    top: 150px;
+    left: 396px;
+    background: #9dc3e8;
+}
+.right .content .chat-right .status.online p
+{
+    position: absolute;
+    top: -5px;
+    left: -26px;
+    color: #000;
+}
+.right .content .chat-right .time
+{
+    position: absolute;
+    top:144px ;
+    left:233px ;
+    color: #a8a9ae;
+}
+.right .content .chat-right .message
+{
+    top: 175px;
+    left: 43px;
+    background: #9dc3e8;
+}
+.right .content .chat-right .message .triangle
+{
+    border-bottom: 5px solid #9dc3e8; 
+    top: -5px;
+    left: 337px;
+}
+.right .content .chat-left .waiting
+{
+    width: 50px;
+    height: 30px;
+    top: 25px;
+    left: 0;
+}
+.blurred
+{
+    background: #b1dba5;
+}
+.off
+{
+    background: #dce8dd;
+}
+.right .content .chat-left .waiting .status.online,
+.right .content .chat-left .waiting .status.blurred,
+.right .content .chat-left .waiting .status.off
+{
+    position: absolute;
+}
+.right .content .chat-left .waiting .status.blurred
+{
+    top: 20px;
+    left: 30px;
+}
+.right .content .chat-left .waiting .status.off
+{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.right .send
+{
+    width: 100%;
+    height: 150px;
+    top: 550px;
+}
+.right .info,
+.right .content,
+.right .send
+{
+    background: #f4f5fa;
+    position: absolute;
+    border-bottom: 2px solid #fff;
+}
+.right .send 
+{
+    padding: 35px;
+}
+.right .send form input[type="text"]
+{
+    width: 100%;
+    height: 70px;
+    border: none;
+}
+.right .send form input[type="file"]
+{
+    display: none;
+}
+
+.right .send form input[type="submit"]
+{
+    border: none;
+    cursor: pointer;
+    color:#aac3e1;
+    background: #f4f5fa;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    right: 35px;
+}
+.right .send form label
+{
+    cursor: pointer;
+}
+.right .send form label i,
+.right .send form input[type="submit"]
+{
+    margin-top: 10px;
+}
