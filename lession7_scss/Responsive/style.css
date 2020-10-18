@@ -1,0 +1,206 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+.top,
+.footer
+{
+    background: #4e5366;
+    width: 100%;
+}
+.bg-card
+{
+    background: #fad384;
+}
+.center
+{
+    margin: 0 auto;
+    text-align: center;
+}
+.mb--1
+{
+    margin-bottom: -1px;
+}
+.font-25
+{
+    font-size: 25px;
+}
+.font-20 {
+    font-size: 20px;
+}
+.bg-light-blue
+{
+    background-color: #4cabad;
+}
+.bg-light-green
+{
+    background: #6ac8ae;
+}
+.bg-footer-light-blue
+{
+    background: #4daaaf;
+}
+.btn_amet_magna
+{
+    background: #79d1b8;
+}
+.btn-sed_lorem {
+    background: #5cb7bc;
+}
+.pd-4
+{
+    padding: 4rem!important;
+}
+.pd-43
+{
+    padding: 4.3rem!important;
+}
+.pd-5
+{
+    padding: 4rem!important;
+}
+.mid
+{
+    background: #575b74;
+    width: 100%;
+}
+
+.border-email
+{
+    border-radius: 25px 0 0 25px;
+    border: none;
+    outline: none;
+}
+.border-submit
+{
+    border-radius: 0 25px 25px 0;
+}
+.border-button
+{
+    border-radius: 100px/100px;
+}
+.size-submit
+{
+    width: 150px;
+    height: 38px;
+    
+}
+.size-email
+{
+    width: 300px;
+    height: 38px;
+}
+.size-form
+{
+    width: 540px;
+    height: 38px;
+}
+.ml--4
+{
+    margin-left: -4px;
+    margin-top: -4px;
+}
+.cursor
+{
+    cursor: pointer;
+}
+.p-right
+{
+    position: absolute;
+    right: 0;
+}
+@media only screen and (max-width: 768px)
+{
+    .top .container .row {
+        display: flex!important;
+        flex-direction: column-reverse;
+    }
+    .top .container .row .col-md-5
+    {
+        display: flex!important;
+        flex-direction: row;
+    }
+    .top .container .row .col-md-5>div {
+        padding:4rem!important;
+    }
+    .lorem_sed_nullam 
+    {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      border-left: none!important;
+      border-right: none!important;  
+    }
+    .carousel-control-prev,
+    .carousel-control-next
+    {
+        display: none;
+    }
+    .sed_tempus_aliquam .img_aliquam
+    {
+        
+    } 
+    .sed_tempus_aliquam .aliquam
+    {
+       flex-direction: column-reverse;
+    }
+    .aliquam .card-body>a
+    {
+        margin: 20px 148px!important;
+    }
+    .pellentesque_fermentum
+    {
+        flex-direction: column;
+    }
+    .sed_tempus_aliquam .img_pellentesque
+    { 
+
+    }
+    .pellentesque>a
+    {
+        margin: 20px 180px!important;      
+    }
+    .footer-items {
+        display: flex!important;
+        box-sizing: border-box;
+    }
+    .footer-items>div
+    {
+        width: 270px;
+        margin: -0.2px!important;
+    }
+    .footer-items>div:nth-child(2) {
+        border-right: none!important;
+        border-bottom: 1px solid #dee2e6!important;
+    }
+    .footer-items>div:nth-child(3) {
+        border-top: 1px solid #dee2e6!important;
+    }
+    .info .add,
+    .info .contact,
+    .info .mail 
+    {
+        display: block!important;
+    }
+    .sed_tempus_aliquam {
+        padding: 1.2rem!important;
+    }
+
+}
+@media only screen and (max-width: 992px) and (min-width: 768px)
+{
+    .card-body
+    {
+        padding: 2rem !important;
+    }
+    .form-group>form
+    {
+       margin: 0 -20%!important;
+    }
+    .footer-items>div
+    {
+        padding: 5px!important;
+    }
+}
