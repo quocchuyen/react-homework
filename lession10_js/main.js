@@ -74,7 +74,7 @@ return ['A', 'C', 'B', 'D']
  */
 //const removeDuplicates  = array.filter((item, index) => array.indexOf(item) === index)
 const removeDuplicates = array => {
-  const newArray=[]
+  const newArray= []
   for (let i = 0 ; i < array.length ; i++) {
     if (array.indexOf(array[i]) === i) {
       newArray.push(array[i])
@@ -105,7 +105,7 @@ const studentScores = [
   { id: 6, score: 9.6 },
   { id: 7, score: 6.1 }
 ]
-const createObjStudents = (studentNames,studentScores) => {
+const createObjStudents = (studentNames, studentScores) => {
   for (let i = 0 ; i < studentNames.length ; i++) {
     for(let j = 0 ; j < studentScores.length ; j++) {
       if (studentNames[i].id === studentScores[i].id) {
