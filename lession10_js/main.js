@@ -3,7 +3,7 @@ Bài 1
 In một bảng nhân của một số bất kỳ với các số từ 1 tới 10 và hiển thị kết quả
  */
 const printMultiplicationTable = number => {
-  if (number <1 || number > 10) return
+  if (number < 1 || number > 10) return
   for (let i = 1 ;i <= 10 ; i ++) {
       console.log(number + ' x ' + i + ' = ' + number * i)
   }
@@ -28,12 +28,12 @@ Hàm nhận tham số là n (số nguyên dương), 1 <= n <= 30 Tính tổng t�
 vd nhập vào 6: Tổng = 1 + 2 + 3 + 4 + 5 + 6 = 21
  */
 const getSum = number => {
-  let sum =0
+  let sum = 0
   if (number < 1 || number > 30) return
   for (let i = 1; i <= number; i++) {
     sum += i
   }
-  console.log(sum)    
+  return sum    
 }
 
 /* Bài 4
@@ -46,7 +46,7 @@ const getFactorial = number => {
   for (let i = 1; i <= number; i++) {
     fact *= i
   }
-  console.log(fact)
+  return fact
 }
 
 /* Bài 5
@@ -61,7 +61,7 @@ const countEvenNumber = array => {
       count += 1
     }
   }
-  console.log(count)
+  return count
 }
 
 /* Bài 6
@@ -115,6 +115,26 @@ const createObjStudents = (studentNames,studentScores) => {
   }
   return studentNames
 }
+// Solution 2
+const findStudentScore = (studentScores,id) => {
+  for (let i = 0; i < studentScores.length ; i++) {
+    const student = studentScores[i]
+    if (student.id === id) {
+      return student.score
+    }
+  }
+  return 0
+}
+const validate = (studentNames, studentScores) => {
+  return true
+} 
+const mergeStudents = (studentNames,studentScores) => {
+  if (!validate(studentNames, studentScores)) return;
+  studentNames.forEach(student => {
+    student.score = findStudentScore(student.id)
+  })
+  return studentNames
+}
 
 /* 
 Bài 8 Cho array dưới đây là danh sách các students
@@ -130,32 +150,29 @@ const students = [
   { id: 7, name: 'Trần Minh Minh', score: 6.1 }
 ]
 const findScoreMaxMin = array => {
-  let max = students[0].score
-  let min = students[0].score
+  let max = array[0].score
+  let min = array[0].score
   const scoreMaxMin = {}
   const theBest = []
   const theBad = []
-  for (let i = 1; i < students.length; i++) {
-    if(students[i].score > max) {
-      max = students[i].score
+  for (let i = 1; i < array.length; i++) {
+    if(array[i].score > max) {
+      max = array[i].score
     }
-    if(students[i].score < min) {
-      min = students[i].score
+    if(array[i].score < min) {
+      min = array[i].score
     }
   }
-  for (let i = 0; i < students.length; i++) {
-    if (students[i].score === max) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].score === max) {
       theBest.push(array[i])
-  }
-    if (students[i].score === min) {
+    }
+    if (array[i].score === min) {
       theBad.push(array[i])
-  }
+    }
   }
   scoreMaxMin.theBest = theBest
   scoreMaxMin.theBad = theBad
-  console.log(scoreMaxMin)
+  return scoreMaxMin
 }
-findScoreMaxMin(students)
-
-
-
+console.log(findScoreMaxMin(students))
