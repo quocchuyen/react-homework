@@ -77,7 +77,7 @@ return true
 const data = [1, 2, 3]
 return false
  */
-const checkObject = (data) => Array.isArray(data) || typeof data !== "object"
+const checkObject = (data) => !Array.isArray(data) && typeof(data) === "object" && data !==null
 
 /* Bài 7
 Viết 1 hàm trả về các key (của 1 object) khác các key truyền vào Vd:
