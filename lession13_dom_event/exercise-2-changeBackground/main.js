@@ -1,15 +1,16 @@
 const divChange = document.getElementById('divChange')
 let flag = 0
-const changeBg = divChange => {
-  if (flag === 0) {
-    divChange.style.background = 'green'
-    flag = 1 
-  }
-  else if (flag === 1) {
-    divChange.style.background = 'red'
-    flag = 0
-  }
+const toggleBgColor = box => {
+  const currentColor = divChange.style.background
+  const nextColor = currentColor  === 'red' || !currentColor ? 'green' : 'red'
+  box.style.background = nextColor
+}
+
+const toggleBgColor2 = event => {
+  const currentColor = divChange.style.background
+  const nextColor = currentColor  === 'red' || !currentColor ? 'green' : 'red'
+  event.target.style.background = nextColor
 }
 divChange.addEventListener('click', () => {
-  changeBg(divChange)
+  toggleBgColor(divChange)
 })
