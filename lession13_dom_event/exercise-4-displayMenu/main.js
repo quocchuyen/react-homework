@@ -156,7 +156,7 @@ const displayMenu = document.getElementById('menu')
 const showMenu = menu => {
   displayMenu.innerHTML = `
   <ul>
-  <li id ="home">  ${home}
+  <li id="home">  ${home}
       <ul>
           <li id="home1">${home1} 
               <ul class="sub-menu">
