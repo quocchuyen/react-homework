@@ -1,0 +1,113 @@
+ul {
+    list-style: none;
+}
+li {
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: #a9ede2;
+    padding: 5px;
+    transition: 1s ;
+    font-family: consolas;
+}
+li:hover {
+    background: #bb7777;
+}
+#home,
+#about {
+    position: relative;
+}
+#home1,
+#home1-1,
+#home1-2, 
+#home1-1 ul li,
+#home1-2 ul li,
+#home2,
+#home2 ul li,
+#home3,
+#home3 ul li,
+#about1,
+#about1-1,
+#about1-1 ul li,
+#about1-2,
+#about1-2-1,
+#about1-2-1 ul li,
+#about-home2,
+#about-home2 ul li {
+    position: absolute;
+}
+#home1,#home1-1,
+#home1-1 ul li,
+#home1-2 ul li,
+#home2 ul li,
+#home3 ul li,
+#about1,
+#about1-1,
+#about1-1 ul li,
+#about1-2-1,
+#about1-2-1 ul li:nth-child(1),
+#about-home2 ul li
+ {
+    top: 0;
+    right: -100%;
+}
+#home2,
+#home1-2,
+#about-home2,
+#about1-2,
+#about1-2-1 ul li:nth-child(2)
+ {
+    right: -100%;
+    bottom: -100%;
+}
+#home3,
+#about1-2-1 ul li:nth-child(3) {
+    right: -100%;
+    bottom: -200%;
+}
+
+#home1, #home2, #home3, #about1, #about-home2 {
+    display: none;
+}
+#home:hover ul li  {
+    display: list-item;
+}
+#home:hover .sub-menu {
+    display: none;
+}
+#home ul li:hover .sub-menu {
+    display: list-item;
+}
+#home ul li:hover #home1-1 ul {
+    display: none;
+}
+#home ul li:hover #home1-2 ul {
+    display: none;
+}
+#home ul li .sub-menu:hover #home1-1 ul {
+    display: list-item;
+}
+#home ul li .sub-menu:hover #home1-2 ul {
+    display: list-item;
+}
+#about:hover ul li  {
+    display: list-item;
+}
+#about:hover .sub-menu {
+    display: none;
+}
+#about ul li:hover .sub-menu {
+    display: list-item;
+}
+#about ul li:hover #about1-1 ul {
+    display: none;
+}
+#about ul li:hover #about1-2 ul {
+    display: none;
+}
+#about ul li .sub-menu:hover #about1-1 ul {
+    display: list-item;
+}
+#about ul li .sub-menu:hover #about1-2 ul {
+    display: list-item;
+}
