@@ -1,32 +1,17 @@
-const selectCategory = document.getElementById('category')
-selectCategory.addEventListener('change', () => {
-  showProduct(selectCategory)
-})
-
-const showProduct = category => {
-  const message = document.getElementById('showProduct')
-  if(category.value === 'laptop') {
-    message.innerHTML = 
-    `<ul>
-      <li>Macbook</li>
-      <li>Dell</li>
-      <li>Lenovo</li>
-      <li>Asus</li>
-    </ul>`
-  }
-  else if (category.value === 'mobile') {
-    message.innerHTML = 
-    `<ul>
-      <li>Apple</li>
-      <li>Samsung</li>
-      <li>Nokia</li>
-    </ul>`
-  }
-  else if (category.value === 'tivi') {
-    message.innerHTML = 
-    `<ul>
-      <li>LG</li>
-      <li>Sony</li>
-    </ul>`
-  }
+#productCategory {
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  border: 2px solid rgb(31, 238, 210);
+  text-align: center;
+}
+#category {
+  text-align: center;
+}
+#showProduct {
+  padding: 50px;
+  line-height: 30px;
+}
+ul>li {
+  cursor: pointer;
 }
