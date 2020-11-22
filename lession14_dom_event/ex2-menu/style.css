@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #eeeeee;
+    color: #777777;
+}
+#box {
+    width: 250px;
+    height: 540px;
+    background: #fff;
+}
+#box ul {
+    list-style: none;
+    padding: 0;
+}
+#box ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #777777;
+}
+#box ul div {
+    position: relative;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dad7d7;
+}
+#box ul div:hover,
+#box ul div:hover a {
+    color: #e67d22;
+    cursor: pointer;
+}
+#box ul div i {
+    font-size: 20px;
+    margin-right:5px;
+}
+#box ul div p {
+    display: block;
+    position: relative;
+    left: 26px;
+    top: -10px;
+    width: 200px;
+    height: 10px;
+}
+#box ul div:nth-child(5):hover {
+    border-left: 5px solid #e67d22;
+    border-right: 5px solid #e67d22;
+}
+#box ul div:nth-child(5):hover > ul  {
+    display: block;
+    color: #777777;    
+}
+#box ul div:nth-child(5):hover > ul li a {
+    color: #777777;
+}
+#box ul div:nth-child(5):hover > ul li a:hover {
+    color: #e67d22;
+}
+#box ul div:nth-child(5) > ul > div:hover > ul  {
+    display: block;
+    top: 10px;
+    color: #777777;
+}
+#box ul div:nth-child(5) > ul > div > ul > div:hover > ul {
+    display: block;
+    top: 10px;
+    color: #777777;
+}
+#box ul div:nth-child(5) > ul > div > ul > div:hover > ul li a {
+    color: #777777;
+}
+#box ul div:nth-child(5) > ul > div > ul > div:hover > ul li a:hover {
+    color: #e67d22;
+}
+#box ul div:nth-child(5) > ul > div > ul > div:nth-child(3) {
+    border-left: 5px solid #e67d22;
+    border-right: 5px solid #e67d22;
+}
+#box ul div:nth-child(5) ul {
+    position: absolute;
+    right: -230px;
+    display: none
+}
+#box ul div:nth-child(5) ul > div:nth-child(1) {
+    border-left: 5px solid #e67d22;
+}
+#box ul div:nth-child(2) {
+    border-left: 5px solid #e67d22;
+    border-right: 5px solid #e67d22;
+}
+#box ul div:nth-child(5) ul div {
+    background: #fff;
+    width: 230px;
+    height: 60px;
+    padding: 20px;
+    position: relative;
+    top: -10px;
+}
+#box div {
+    height: 60px;
+    padding: 10px;
+}
+#box div input {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #dad7d7;
+    color: #777777;
+}
+#box > div i {
+    width: 48px;
+    height: 50px;
+    background: #e67d22;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+}
